@@ -14,8 +14,9 @@ You can watch live app at: https://itunes.apple.com/us/app/apple-store/id1086349
 * Create offline playlist video
 
 ## How to build & requirements
-Xcode 7.3.1
-iOS 8.0 above
+* Xcode 7.3.1
+* Pods newset version
+* iOS 8.0 above
 
 Create Youtube API Key:
 Visit https://console.developers.google.com/apis/credentials/key?type=CLIENT_SIDE_IOS&project=<Your_Google_Project>
@@ -27,6 +28,12 @@ static var secretKeyApi: [String] {
             return keyArray
         }
 ```
+Go to your project root directiory:
+```
+pod install --verbose
+```
+Open TubeTrends.xcworkspace in Xcode then you can build project normaly.
+
 ## Donate
 
 Give me a coffee cup if it's useful.
