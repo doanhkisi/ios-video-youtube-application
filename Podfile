@@ -1,0 +1,25 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'TubeTrends' do
+    pod 'Alamofire', '~> 3.0'
+    pod 'SwiftyJSON', '~> 2.3'
+    pod 'HanekeSwift'
+    pod 'RealmSwift'
+    pod 'UIColor_Hex_Swift', '~> 1.7'
+    pod 'CSStickyHeaderFlowLayout'
+    pod 'ARNTransitionAnimator'
+    pod 'CarbonKit', '~>2.1'
+    pod 'DZNEmptyDataSet'
+    pod 'MBProgressHUD', '~> 0.9.2'
+    pod 'SSSnackbar'
+    pod 'Google/Analytics'
+    pod 'iRate'
+    pod 'QorumLogs'
+    pod 'XCDYouTubeKit'
+    pod 'FontAwesome.swift'
+    pod 'FontAwesomeIconFactory'
+    pod 'NSDate+TimeAgo', :git => 'https://github.com/kevinlawler/NSDate-TimeAgo'
+    pod 'AutoScrollLabel'
+    pod 'ESTMusicIndicator'
+end

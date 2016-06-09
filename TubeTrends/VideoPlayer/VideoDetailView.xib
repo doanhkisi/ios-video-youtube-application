@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoDetailView" customModule="TubeTrends" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomToolHeightConstraint" destination="u1P-DR-Lmx" id="BCB-o4-OoS"/>
+                <outlet property="descriptionLabel" destination="U1e-q6-3Gn" id="TpZ-yw-f0U"/>
+                <outlet property="dislikesCountLabel" destination="RwP-Yb-6Td" id="mKZ-nZ-mKC"/>
+                <outlet property="downloadButton" destination="FJ3-xE-BZg" id="njN-4q-5Od"/>
+                <outlet property="expanButton" destination="g5A-jH-FD4" id="zek-vd-fWh"/>
+                <outlet property="likesCountLabel" destination="Tnr-ZA-Mp7" id="JBz-rs-YWk"/>
+                <outlet property="titleLabel" destination="TGa-Ta-Bww" id="zB4-xT-3im"/>
+                <outlet property="titleLabelTopMarginConstraint" destination="z1I-Dg-ezA" id="Gwq-cj-iZ8"/>
+                <outlet property="viewsCountLabel" destination="hSs-oO-ioc" id="I3K-JS-ldF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGa-Ta-Bww">
+                    <rect key="frame" x="8" y="8" width="538" height="0.0"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSs-oO-ioc">
+                    <rect key="frame" x="8" y="16" width="538" height="0.0"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5A-jH-FD4" customClass="NIKFontAwesomeButton">
+                    <rect key="frame" x="546" y="8" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="waR-rl-pdf"/>
+                        <constraint firstAttribute="height" constant="44" id="x7m-kr-8YJ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="iconHex" value="f0dd"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                            <color key="value" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="expanButtonTapped:" destination="-1" eventType="touchUpInside" id="hyu-bR-Tgb"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1e-q6-3Gn">
+                    <rect key="frame" x="8" y="24" width="582" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l4J-KB-Bzu">
+                    <rect key="frame" x="0.0" y="570" width="600" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1U-gM-67V" customClass="NIKFontAwesomeButton">
+                            <rect key="frame" x="8" y="5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="Xde-c2-Ofs"/>
+                                <constraint firstAttribute="width" constant="20" id="kUm-4X-whf"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="iconHex" value="f164"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8a-98-meY" customClass="NIKFontAwesomeButton">
+                            <rect key="frame" x="108" y="5" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="Zp1-Kf-tFF"/>
+                                <constraint firstAttribute="height" constant="20" id="nHj-38-r2k"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="iconHex" value="f165"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tnr-ZA-Mp7">
+                            <rect key="frame" x="28" y="15" width="80" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="1mF-vT-8oO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RwP-Yb-6Td">
+                            <rect key="frame" x="128" y="15" width="80" height="0.0"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="9N3-8B-tXJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJ3-xE-BZg" customClass="NIKFontAwesomeButton">
+                            <rect key="frame" x="472" y="-7" width="120" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="VTz-He-kuB"/>
+                                <constraint firstAttribute="height" constant="44" id="bcz-FT-ZFV"/>
+                            </constraints>
+                            <state key="normal" title=" Download">
+                                <color key="titleColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="iconHex" value="f019"/>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="downloadButtonTapped:" destination="-1" eventType="touchUpInside" id="2H6-Rh-xdC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="RwP-Yb-6Td" firstAttribute="centerY" secondItem="l4J-KB-Bzu" secondAttribute="centerY" id="255-Rx-osP"/>
+                        <constraint firstItem="Tnr-ZA-Mp7" firstAttribute="centerY" secondItem="l4J-KB-Bzu" secondAttribute="centerY" id="32l-6s-Phu"/>
+                        <constraint firstItem="Tnr-ZA-Mp7" firstAttribute="leading" secondItem="E1U-gM-67V" secondAttribute="trailing" id="8s8-Ws-7H8"/>
+                        <constraint firstAttribute="trailing" secondItem="FJ3-xE-BZg" secondAttribute="trailing" constant="8" id="9sq-IN-M0n"/>
+                        <constraint firstItem="E1U-gM-67V" firstAttribute="leading" secondItem="l4J-KB-Bzu" secondAttribute="leading" constant="8" id="CWJ-Am-qO5"/>
+                        <constraint firstItem="p8a-98-meY" firstAttribute="centerY" secondItem="l4J-KB-Bzu" secondAttribute="centerY" id="b4D-Z2-XeG"/>
+                        <constraint firstItem="p8a-98-meY" firstAttribute="leading" secondItem="Tnr-ZA-Mp7" secondAttribute="trailing" id="eUa-OX-pYW"/>
+                        <constraint firstItem="FJ3-xE-BZg" firstAttribute="centerY" secondItem="l4J-KB-Bzu" secondAttribute="centerY" id="ohg-j7-Km3"/>
+                        <constraint firstItem="E1U-gM-67V" firstAttribute="centerY" secondItem="l4J-KB-Bzu" secondAttribute="centerY" id="qEZ-Li-48A"/>
+                        <constraint firstAttribute="height" constant="30" id="u1P-DR-Lmx"/>
+                        <constraint firstItem="RwP-Yb-6Td" firstAttribute="leading" secondItem="p8a-98-meY" secondAttribute="trailing" id="zcO-rS-2Lb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="U1e-q6-3Gn" firstAttribute="top" secondItem="hSs-oO-ioc" secondAttribute="bottom" constant="8" id="5MO-9t-l5A"/>
+                <constraint firstItem="l4J-KB-Bzu" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="D9a-gj-D3g"/>
+                <constraint firstItem="hSs-oO-ioc" firstAttribute="top" secondItem="TGa-Ta-Bww" secondAttribute="bottom" constant="8" id="G3n-cw-1KT"/>
+                <constraint firstItem="g5A-jH-FD4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="JGz-E6-XlF"/>
+                <constraint firstAttribute="trailing" secondItem="g5A-jH-FD4" secondAttribute="trailing" constant="10" id="NYH-5k-28Y"/>
+                <constraint firstItem="U1e-q6-3Gn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="OQx-6O-yR4"/>
+                <constraint firstItem="g5A-jH-FD4" firstAttribute="leading" secondItem="TGa-Ta-Bww" secondAttribute="trailing" id="RcB-4m-3Vt"/>
+                <constraint firstItem="l4J-KB-Bzu" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ant-oi-8Zo"/>
+                <constraint firstAttribute="trailing" secondItem="U1e-q6-3Gn" secondAttribute="trailing" constant="10" id="crk-pN-O9l"/>
+                <constraint firstItem="g5A-jH-FD4" firstAttribute="leading" secondItem="hSs-oO-ioc" secondAttribute="trailing" id="jAy-Pj-igg"/>
+                <constraint firstItem="TGa-Ta-Bww" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ktd-ys-UYM"/>
+                <constraint firstItem="hSs-oO-ioc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="wj0-M1-Da1"/>
+                <constraint firstItem="TGa-Ta-Bww" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="z1I-Dg-ezA"/>
+                <constraint firstAttribute="bottom" secondItem="l4J-KB-Bzu" secondAttribute="bottom" id="zqs-Oh-LTC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>
